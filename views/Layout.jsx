@@ -13,7 +13,7 @@ module.exports = function Layout({ title, children }) {
         <link rel="stylesheet" href="/stylesheets/application.css" />
 
         {/* your client JavaScript code */}
-        <script src="/js/application.js" />
+        <script defer src="/js/application.js" />
 
         <title>{title}</title>
       </head>
