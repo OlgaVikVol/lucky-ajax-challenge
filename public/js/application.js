@@ -16,15 +16,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
       document.querySelector("#sides").value = null;
 
-    //! result - это то, что получили из сервер
+      //! result - это то, что получили из сервер
 
       const { die, roll } = await response.json();
 
       const container = document.querySelector("#die-container");
 
       container.innerHTML = `
-     <div className="die" style="margin: 40px 0 20px 0">
-                <span id="number" className="roll" style="border: solid 2px #666; padding: 20px; background-color: orange">
+     <div class="die">
+                <span id="number" class="roll">
                   ${roll}
                 </span>
               </div>
